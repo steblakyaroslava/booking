@@ -1,0 +1,8 @@
+{
+  "DB_TYPE": "atlas",
+  "DB_USERNAME": "yaroslava",
+  "DB_PASSWORD": "BQ4wRiHnCtsLzCCs",
+  "DB_CLUSTER": "bookingcluster",
+  "DB_HASH": "w1m7t",
+  "DB_NAME": "booking"
+}

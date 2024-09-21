@@ -1,0 +1,34 @@
+### Створення нового тікета
+POST http://localhost:5000/ticket
+Content-Type: application/json
+
+{
+  "date": "2024-09-21T00:00:00Z", 
+  "time": "18:00:00",
+  "fromplace": "Uzhorod",
+  "to": "Lviv",
+  "stops": [""],
+  "price": 300
+}
+
+
+### Отримання всіх тикетів
+GET http://localhost:5000/tickets
+
+### Отримання тікета по айді
+GET http://localhost:5000/ticket/66eeaac58e1984c3ffa8f0c5
+
+### Оновлення тікета
+PUT http://localhost:5000/ticket/66eeab0e8e1984c3ffa8f0c7
+Content-Type: application/json
+
+{
+  "date": "2024-09-21T00:00:00Z", 
+  "time": "18:00:00",
+  "fromplace": "Uzhorod",
+  "to": "Lviv",
+  "stops": ["Svalava"],
+  "price": 178
+}
+### Видалення тікета
+DELETE http://localhost:5000/ticket/66eeab0e8e1984c3ffa8f0c7
