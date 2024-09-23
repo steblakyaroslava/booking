@@ -26,8 +26,6 @@ signup = async (req, res) => {
       role: role || "user",
     });
 
-    console.log(newUser);
-
     return res.status(201).json({ newUser });
   } catch (error) {
     console.log(error);

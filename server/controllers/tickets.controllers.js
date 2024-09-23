@@ -6,7 +6,6 @@ const Ticket = require("../models/Ticket");
 createTicket = async (req, res) => {
   try {
     let { date, time, fromplace, to, stops, price } = req.body;
-    console.log(req.body);
     const ticket = await new Ticket({
       date: new Date(date),
       time,
