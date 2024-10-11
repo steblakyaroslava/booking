@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const config = require("config");
 const ticketsRouter = require("./routes/tickets.routes");
+const authRouter = require("./routes/auth.routes");
 
 const PORT = process.env.PORT || 5000;
 
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(ticketsRouter);
+app.use(authRouter);
 
 const db_url =
   config.get("DB_TYPE") === "local"
